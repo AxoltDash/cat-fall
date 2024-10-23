@@ -1,9 +1,16 @@
-This is my README.md
 
-# Link i need
----
-### NEW NAMES GODOT 4:
-https://docs.godotengine.org/en/stable/tutorials/migrating/upgrading_to_godot_4.html#automatically-renamed-nodes-and-resources
+## Description
 
-### GRAVITY:
-https://docs.godotengine.org/en/stable/tutorials/physics/kinematic_character_2d.html
+Fall Cat is a simple game where you need to prevent the cats from landing on their feet, if one falls you lose.
+
+## License
+
+This project is for educational purposes and is not intended for commercial use.
+
+## Acknowledgements
+
+- Godot Engine documentation and community for resources and tutorials.
+
+## Requirements
+
+- Godot Engine 4.3 or later.
