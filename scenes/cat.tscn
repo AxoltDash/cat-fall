@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=3 uid="uid://cndma4jklh4hh"]
+
+[ext_resource type="Texture2D" uid="uid://cp7iji065u8n4" path="res://assets/kitty.png" id="1_87jni"]
+
+[sub_resource type="GDScript" id="GDScript_18vja"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsr54"]
+atlas = ExtResource("1_87jni")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uaut4"]
+atlas = ExtResource("1_87jni")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t3a8e"]
+atlas = ExtResource("1_87jni")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0djt"]
+atlas = ExtResource("1_87jni")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dkg0a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jsr54")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uaut4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t3a8e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r0djt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nctp5"]
+radius = 15.0
+
+[node name="cat" type="Node2D"]
+script = SubResource("GDScript_18vja")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_dkg0a")
+frame_progress = 0.930128
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("CircleShape2D_nctp5")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
