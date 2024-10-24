@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jaqrsyg8oqx4"
-path="res://.godot/imported/spark-preview2.png-fd55f7201c51fe9accab29418fd522e0.ctex"
+path="res://.godot/imported/spark-preview2.png-01cd7259d0ae3cdabd4b6c932d2d2ba2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://trash/Legacy Collection/Assets/Misc/Warped shooting fx/spark/Sprites/spark-preview2.png"
-dest_files=["res://.godot/imported/spark-preview2.png-fd55f7201c51fe9accab29418fd522e0.ctex"]
+source_file="res://assets/images/shooting/spark/Sprites/spark-preview2.png"
+dest_files=["res://.godot/imported/spark-preview2.png-01cd7259d0ae3cdabd4b6c932d2d2ba2.ctex"]
 
 [params]
 

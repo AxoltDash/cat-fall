@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqgfw3v5ibf6h"
-path="res://.godot/imported/hits-2-3.png-cae255f5e7efe3bfae2ddc066a9c3b5a.ctex"
+path="res://.godot/imported/hits-2-3.png-11b8b3151b654a38d1ecbe8a6d0ecda9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://trash/Legacy Collection/Assets/Misc/Warped shooting fx/hits/Hits-2/Sprites/hits-2-3.png"
-dest_files=["res://.godot/imported/hits-2-3.png-cae255f5e7efe3bfae2ddc066a9c3b5a.ctex"]
+source_file="res://assets/images/shooting/hits/Hits-2/Sprites/hits-2-3.png"
+dest_files=["res://.godot/imported/hits-2-3.png-11b8b3151b654a38d1ecbe8a6d0ecda9.ctex"]
 
 [params]
 

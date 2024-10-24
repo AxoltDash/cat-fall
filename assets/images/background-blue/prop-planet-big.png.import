@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjhxp6aawq7v7"
-path="res://.godot/imported/prop-planet-big.png-124fab09fc689151fd1f9c300a1a303b.ctex"
+path="res://.godot/imported/prop-planet-big.png-bda1b58f2b5b664db3e2166aa268ed29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://trash/Legacy Collection/Assets/Environments/space_background_pack/Blue Version/layered/prop-planet-big.png"
-dest_files=["res://.godot/imported/prop-planet-big.png-124fab09fc689151fd1f9c300a1a303b.ctex"]
+source_file="res://assets/images/background-blue/prop-planet-big.png"
+dest_files=["res://.godot/imported/prop-planet-big.png-bda1b58f2b5b664db3e2166aa268ed29.ctex"]
 
 [params]
 

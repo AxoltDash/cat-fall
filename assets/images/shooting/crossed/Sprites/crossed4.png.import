@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duxbskofvxb6o"
-path="res://.godot/imported/crossed4.png-551e4b5aff192790208f9be3366e8cd4.ctex"
+path="res://.godot/imported/crossed4.png-4e77cede1d5bdd431ce0cd20351dbb99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://trash/Legacy Collection/Assets/Misc/Warped shooting fx/crossed/Sprites/crossed4.png"
-dest_files=["res://.godot/imported/crossed4.png-551e4b5aff192790208f9be3366e8cd4.ctex"]
+source_file="res://assets/images/shooting/crossed/Sprites/crossed4.png"
+dest_files=["res://.godot/imported/crossed4.png-4e77cede1d5bdd431ce0cd20351dbb99.ctex"]
 
 [params]
 

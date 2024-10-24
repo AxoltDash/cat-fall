@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d272kyflcfimh"
-path="res://.godot/imported/bg-preview-big.png-b714e7a29fd107ae632c222f662459f5.ctex"
+path="res://.godot/imported/bg-preview-big.png-9a8594c2c2a72a0cf275551afb7d4e35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://trash/Legacy Collection/Assets/Packs/SpaceShooter/Space Shooter files/background/bg-preview-big.png"
-dest_files=["res://.godot/imported/bg-preview-big.png-b714e7a29fd107ae632c222f662459f5.ctex"]
+source_file="res://assets/images/background/bg-preview-big.png"
+dest_files=["res://.godot/imported/bg-preview-big.png-9a8594c2c2a72a0cf275551afb7d4e35.ctex"]
 
 [params]
 

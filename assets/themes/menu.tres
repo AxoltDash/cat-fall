@@ -1,0 +1,17 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://df3sknlhmdbi4"]
+
+[ext_resource type="FontFile" uid="uid://ddahxijjslhsv" path="res://assets/fonts/upheavtt.ttf" id="1_p8kgh"]
+
+[resource]
+default_base_scale = 0.99
+default_font = ExtResource("1_p8kgh")
+default_font_size = 128
+Button/colors/font_focus_color = Color(0.866667, 0.839216, 0.870588, 1)
+Button/colors/font_hover_color = Color(0.866667, 0.839216, 0.870588, 1)
+Button/colors/font_hover_pressed_color = Color(0.76704, 0.4888, 0.94, 1)
+Label/colors/font_color = Color(0.866667, 0.839216, 0.870588, 1)
+Label/colors/font_diabled_cc = Color(0, 0, 0, 0)
+Label/colors/font_focus_color = Color(0.866667, 0.839216, 0.870588, 1)
+Label/colors/font_shadow_color = Color(0, 0.0156863, 0.0941176, 1)
+Label/constants/shadow_offset_x = 4
+Label/font_sizes/font_size = 40

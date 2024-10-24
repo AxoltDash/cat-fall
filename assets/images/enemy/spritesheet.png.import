@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvjhv7pgixeht"
-path="res://.godot/imported/spritesheet.png-01ac605a4517eb0c6ff82919dd84a803.ctex"
+path="res://.godot/imported/spritesheet.png-8c3d848d51795d40cd1ff62ec658b099.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://trash/Legacy Collection/Assets/Packs/SpaceShooter/Space Shooter files/enemy/spritesheet.png"
-dest_files=["res://.godot/imported/spritesheet.png-01ac605a4517eb0c6ff82919dd84a803.ctex"]
+source_file="res://assets/images/enemy/spritesheet.png"
+dest_files=["res://.godot/imported/spritesheet.png-8c3d848d51795d40cd1ff62ec658b099.ctex"]
 
 [params]
 

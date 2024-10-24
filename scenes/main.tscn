@@ -1,11 +1,9 @@
-[gd_scene format=3 uid="uid://6cs4ht6mdga8"]
+[gd_scene format=3 uid="uid://brn51qq7mv1xw"]
 
 [node name="Main" type="Node2D"]
 
-[node name="UI_Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-
-[node name="CatsContainer" type="Node2D" parent="."]

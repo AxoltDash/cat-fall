@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brsmrdo20sl83"
-path="res://.godot/imported/bolt1.png-6446789e2a51720fb172883d823b6cce.ctex"
+path="res://.godot/imported/bolt1.png-11dab279de056b51e556c6f6e9696b3d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://trash/Legacy Collection/Assets/Misc/Warped shooting fx/Bolt/Sprites/bolt1.png"
-dest_files=["res://.godot/imported/bolt1.png-6446789e2a51720fb172883d823b6cce.ctex"]
+source_file="res://assets/images/shooting/Bolt/Sprites/bolt1.png"
+dest_files=["res://.godot/imported/bolt1.png-11dab279de056b51e556c6f6e9696b3d.ctex"]
 
 [params]
 
