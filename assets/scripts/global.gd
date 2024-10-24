@@ -1,11 +1,12 @@
 extends Node
 
+var score : int = 0
+var credits : int = 1
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+var axis : Vector2
+# retunr the axis of the player
+func get_axis() -> Vector2:
+	axis.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
+	axis.y = int(Input.is_action_pressed("ui_up")) - int(Input.is_action_pressed("ui_down"))
+	return axis.normalized()
+d
