@@ -11,15 +11,19 @@ config_version=5
 [application]
 
 config/name="Cat-Fall"
-run/main_scene="res://scenes/cat.tscn"
+run/main_scene="res://scenesmain.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
+run/max_fps=60
+boot_splash/show_image=false
 config/icon="res://icon.svg"
 
 [display]
 
 window/size/viewport_width=480
 window/size/viewport_height=720
-window/stretch/mode="canvas_items"
+window/size/mode=4
+window/size/resizable=false
+window/stretch/mode="viewport"
 
 [rendering]
 
