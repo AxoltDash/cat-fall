@@ -1,16 +1,9 @@
 [gd_scene load_steps=156 format=3 uid="uid://dqw5t7e8d87nf"]
 
 [ext_resource type="Texture2D" uid="uid://cjuapvvu4p13y" path="res://assets/images/background-blue/blue-with-stars.png" id="1_jqvbe"]
-[ext_resource type="FontFile" uid="uid://ddahxijjslhsv" path="res://assets/fonts/upheavtt.ttf" id="1_mu0w7"]
+[ext_resource type="Theme" uid="uid://df3sknlhmdbi4" path="res://assets/themes/menu.tres" id="1_y148x"]
 [ext_resource type="Texture2D" uid="uid://cyjco5rm67sdy" path="res://assets/images/PlanetRing_383957580.png" id="2_o2yim"]
-
-[sub_resource type="Theme" id="Theme_px7nk"]
-default_base_scale = 0.99
-default_font = ExtResource("1_mu0w7")
-default_font_size = 128
-Label/colors/font_color = Color(0.866667, 0.839216, 0.870588, 1)
-Label/colors/font_diabled_cc = Color(0, 0, 0, 0)
-Label/colors/font_focus_color = Color(0.866667, 0.839216, 0.870588, 1)
+[ext_resource type="Script" path="res://assets/scripts/menu.gd" id="2_y3vxi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e573u"]
 atlas = ExtResource("2_o2yim")
@@ -1066,7 +1059,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_d8olp")
 }],
 "loop": true,
-"name": &"default",
+"name": &"rotationPlanet",
 "speed": 8.0
 }]
 
@@ -1077,7 +1070,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = SubResource("Theme_px7nk")
+theme = ExtResource("1_y148x")
+script = ExtResource("2_y3vxi")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
@@ -1085,39 +1079,50 @@ offset_right = 272.0
 offset_bottom = 160.0
 texture = ExtResource("1_jqvbe")
 
+[node name="PlanetSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(136, 130.143)
+scale = Vector2(0.906666, 0.906666)
+sprite_frames = SubResource("SpriteFrames_8o0vx")
+animation = &"rotationPlanet"
+frame_progress = 0.673179
+
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_right = 76.0
-offset_bottom = 50.0
+offset_top = 14.0
+offset_right = 907.0
+offset_bottom = 501.0
+scale = Vector2(0.3, 0.3)
 
-[node name="Main" type="VBoxContainer" parent="MarginContainer"]
+[node name="Title" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="Title" type="VBoxContainer" parent="MarginContainer/Main"]
+[node name="Title" type="Label" parent="MarginContainer/Title"]
 layout_mode = 2
-
-[node name="Title" type="Label" parent="MarginContainer/Main/Title"]
-layout_mode = 2
-text = "Cat Space"
+text = "Cat-Space"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Tittle2waos" type="Label" parent="MarginContainer/Main/Title"]
+[node name="MarginContainer2" type="MarginContainer" parent="."]
 layout_mode = 2
+offset_top = 64.0
+offset_right = 1360.0
+offset_bottom = 474.0
+scale = Vector2(0.2, 0.2)
 
-[node name="Buttons" type="HBoxContainer" parent="MarginContainer"]
+[node name="Buttons" type="HBoxContainer" parent="MarginContainer2"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.0
+alignment = 1
 
-[node name="Start" type="Button" parent="MarginContainer/Buttons"]
+[node name="Start" type="Button" parent="MarginContainer2/Buttons"]
 layout_mode = 2
+text = "START"
 
-[node name="Exit" type="Button" parent="MarginContainer/Buttons"]
+[node name="Exit" type="Button" parent="MarginContainer2/Buttons"]
 layout_mode = 2
+text = "EXIT"
 
-[node name="MadeBy" type="Label" parent="MarginContainer"]
-layout_mode = 2
-
-[node name="Planet" type="AnimatedSprite2D" parent="."]
-position = Vector2(136, 128)
-sprite_frames = SubResource("SpriteFrames_8o0vx")
-frame_progress = 0.870181
+[connection signal="pressed" from="MarginContainer2/Buttons/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer2/Buttons/Exit" to="." method="_on_exit_pressed"]
