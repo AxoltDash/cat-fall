@@ -14,3 +14,15 @@ This project is for educational purposes and is not intended for commercial use.
 ## Requirements
 
 - Godot Engine 4.3 or later.
+
+## Copyright
+Music used:
+Tronicles
+https://www.youtube.com/watch?v=JUegvqJdyQI
+
+Evolution
+https://youtu.be/a6v-RL5ypR4?feature=shared
+
+Sirius
+https://youtu.be/60llyQkMces?feature=shared
+

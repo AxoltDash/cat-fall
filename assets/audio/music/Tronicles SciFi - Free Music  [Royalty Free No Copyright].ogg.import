@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b7l3aq1kxrkda"
+path="res://.godot/imported/Tronicles SciFi - Free Music  [Royalty Free No Copyright].ogg-c573891957d9f30d471133bd00a1d4a8.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/music/Tronicles SciFi - Free Music  [Royalty Free No Copyright].ogg"
+dest_files=["res://.godot/imported/Tronicles SciFi - Free Music  [Royalty Free No Copyright].ogg-c573891957d9f30d471133bd00a1d4a8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
