@@ -66,20 +66,20 @@ centered = false
 motion_mirroring = Vector2(544, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bacground/Planet_small/ParallaxLayer"]
-position = Vector2(44, 15)
+position = Vector2(49, 14)
 scale = Vector2(0.976744, 0.998381)
 texture = ExtResource("7_fq0jk")
 centered = false
 offset = Vector2(272, 0)
 flip_v = true
 
-[node name="Planet_small2" type="ParallaxBackground" parent="Bacground"]
+[node name="Planet_mini" type="ParallaxBackground" parent="Bacground"]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="Bacground/Planet_small2"]
-motion_mirroring = Vector2(272, 0)
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Bacground/Planet_mini"]
+motion_mirroring = Vector2(544, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Bacground/Planet_small2/ParallaxLayer"]
-position = Vector2(206, 80)
+[node name="Sprite2D" type="Sprite2D" parent="Bacground/Planet_mini/ParallaxLayer"]
+position = Vector2(208, 71)
 scale = Vector2(0.976744, 0.998381)
 texture = ExtResource("8_lfc6p")
 centered = false
