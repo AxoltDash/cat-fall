@@ -31,59 +31,59 @@ autoplay = true
 wait_time = 0.92
 autostart = true
 
-[node name="Bacground" type="Node" parent="."]
+[node name="Background" type="Node" parent="."]
 
-[node name="Back" type="ParallaxBackground" parent="Bacground"]
+[node name="Back" type="ParallaxBackground" parent="Background"]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="Bacground/Back"]
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background/Back"]
 motion_mirroring = Vector2(272, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Bacground/Back/ParallaxLayer"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Back/ParallaxLayer"]
 texture = ExtResource("4_gixcr")
 centered = false
 
-[node name="Stars" type="ParallaxBackground" parent="Bacground"]
+[node name="Stars" type="ParallaxBackground" parent="Background"]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="Bacground/Stars"]
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background/Stars"]
 motion_mirroring = Vector2(272, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Bacground/Stars/ParallaxLayer"]
+[node name="Sprite2D" type="Sprite2D" parent="Background/Stars/ParallaxLayer"]
 texture = ExtResource("5_8qv3w")
 centered = false
 
-[node name="Planet_big" type="ParallaxBackground" parent="Bacground"]
+[node name="Planet_mini" type="ParallaxBackground" parent="Background"]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="Bacground/Planet_big"]
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background/Planet_mini"]
 motion_mirroring = Vector2(544, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Bacground/Planet_big/ParallaxLayer"]
-texture = ExtResource("6_a1suf")
+[node name="Sprite2D" type="Sprite2D" parent="Background/Planet_mini/ParallaxLayer"]
+position = Vector2(255, 79)
+scale = Vector2(0.976744, 0.998381)
+texture = ExtResource("8_lfc6p")
 centered = false
+offset = Vector2(272, 0)
 
-[node name="Planet_small" type="ParallaxBackground" parent="Bacground"]
+[node name="Planet_small" type="ParallaxBackground" parent="Background"]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="Bacground/Planet_small"]
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background/Planet_small"]
 motion_mirroring = Vector2(544, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Bacground/Planet_small/ParallaxLayer"]
-position = Vector2(49, 14)
+[node name="Sprite2D" type="Sprite2D" parent="Background/Planet_small/ParallaxLayer"]
+position = Vector2(35.3256, 23)
 scale = Vector2(0.976744, 0.998381)
 texture = ExtResource("7_fq0jk")
 centered = false
 offset = Vector2(272, 0)
 flip_v = true
 
-[node name="Planet_mini" type="ParallaxBackground" parent="Bacground"]
+[node name="Planet_big" type="ParallaxBackground" parent="Background"]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="Bacground/Planet_mini"]
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background/Planet_big"]
 motion_mirroring = Vector2(544, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Bacground/Planet_mini/ParallaxLayer"]
-position = Vector2(208, 71)
-scale = Vector2(0.976744, 0.998381)
-texture = ExtResource("8_lfc6p")
+[node name="Sprite2D" type="Sprite2D" parent="Background/Planet_big/ParallaxLayer"]
+texture = ExtResource("6_a1suf")
 centered = false
-offset = Vector2(272, 0)
 
 [node name="PathSpawn" type="Path2D" parent="."]
 curve = SubResource("Curve2D_etckb")
