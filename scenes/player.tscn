@@ -1,3 +1,87 @@
-[gd_scene format=3 uid="uid://bq7gm2rp8ugcy"]
+[gd_scene load_steps=12 format=3 uid="uid://d32ut5lvk40ki"]
 
-[node name="Player" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://b6dbqnodt4h8t" path="res://assets/images/player/Spaceship.png" id="1_1t844"]
+[ext_resource type="Script" path="res://assets/scripts/player.gd" id="1_kck58"]
+[ext_resource type="Texture2D" uid="uid://0j86d1xjsqu6" path="res://assets/images/player/flash/flash.png" id="3_e75jf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jnk1n"]
+atlas = ExtResource("1_1t844")
+region = Rect2(28, 0, 28, 23)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aaf1n"]
+atlas = ExtResource("1_1t844")
+region = Rect2(0, 0, 28, 23)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ggj1d"]
+atlas = ExtResource("1_1t844")
+region = Rect2(56, 0, 28, 23)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ghocj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jnk1n")
+}],
+"loop": false,
+"name": &"Down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aaf1n")
+}],
+"loop": false,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ggj1d")
+}],
+"loop": false,
+"name": &"Up",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uedkc"]
+atlas = ExtResource("3_e75jf")
+region = Rect2(0, 0, 11, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1evu"]
+atlas = ExtResource("3_e75jf")
+region = Rect2(11, 0, 11, 19)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fume0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uedkc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1evu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ceddt"]
+size = Vector2(23, 8.5)
+
+[node name="Player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_kck58")
+
+[node name="Spaceship" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ghocj")
+animation = &"Up"
+autoplay = "Idle"
+
+[node name="Flash" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_fume0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.25)
+shape = SubResource("RectangleShape2D_ceddt")
+
+[node name="Settings" type="Node2D" parent="."]
