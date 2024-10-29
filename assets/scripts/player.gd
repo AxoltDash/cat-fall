@@ -37,4 +37,3 @@ func shoot_ctrl() -> void:
 	var shot_instance = shot.instance()
 	shot_instance.global_position = $ShootSpawn.global_position
 	get_tree().call_group("Level", "add_child", shot_instance)
-
