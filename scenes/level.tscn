@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c0tsjfqy0elkj"]
+[gd_scene load_steps=12 format=3 uid="uid://c0tsjfqy0elkj"]
 
 [ext_resource type="Script" path="res://assets/scripts/level.gd" id="1_d1y62"]
 [ext_resource type="Script" path="res://assets/scripts/gui.gd" id="2_irxdf"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://dj077and3m4o" path="res://assets/images/background/layered/bg-planet.png" id="6_a1suf"]
 [ext_resource type="Texture2D" uid="uid://bjhxp6aawq7v7" path="res://assets/images/background-blue/prop-planet-big.png" id="7_fq0jk"]
 [ext_resource type="Texture2D" uid="uid://cktjtyhu5gc7q" path="res://assets/images/background-blue/prop-planet-small.png" id="8_lfc6p"]
+[ext_resource type="Script" path="res://assets/scripts/player.gd" id="9_6bkm4"]
+[ext_resource type="PackedScene" uid="uid://c4d56dr6rdage" path="res://scenes/shot.tscn" id="10_o7wk7"]
 
 [sub_resource type="Curve2D" id="Curve2D_etckb"]
 _data = {
@@ -91,5 +93,11 @@ curve = SubResource("Curve2D_etckb")
 [node name="PathFollow2D" type="PathFollow2D" parent="PathSpawn"]
 position = Vector2(272, 0)
 rotation = 1.5708
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(64, 80)
+motion_mode = 1
+script = ExtResource("9_6bkm4")
+shot = ExtResource("10_o7wk7")
 
 [connection signal="timeout" from="Settings/Timer" to="." method="_on_timer_timeout"]
