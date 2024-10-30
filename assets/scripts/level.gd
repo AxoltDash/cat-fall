@@ -1,15 +1,22 @@
 extends Node2D
+
 @export var enemy : PackedScene
+@onready var timer = $Settings/Timer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	GLOBAL.score = 0
 	GLOBAL.credits = 1
+	timer.timeout.connect(_on_timer_timeout)
+	# Set initial random timeout
+	timer.wait_time = randf_range(0.1, 1.0)
+	timer.start()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta) -> void:
 	parallax_bg(delta)
-	$PathSpawn/PathFollow2D.set_progress($PathSpawn/PathFollow2D.get_progress() + 80 * delta)
+	# Increase the speed of PathFollow2D
+	$PathSpawn/PathFollow2D.set_progress($PathSpawn/PathFollow2D.get_progress() + 160 * delta)
 
 func parallax_bg(delta_time) -> void:
 	get_node("Background/Back").scroll_base_offset -= Vector2(32, 0) * delta_time * 0.60
@@ -22,3 +29,6 @@ func _on_timer_timeout() -> void:
 	var enemy_instance = enemy.instantiate()
 	enemy_instance.global_position = $PathSpawn/PathFollow2D.global_position
 	add_child(enemy_instance)
+	# Set new random timeout
+	timer.wait_time = randf_range(0.1, 1.0)
+	timer.start()

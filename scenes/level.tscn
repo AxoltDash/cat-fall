@@ -13,7 +13,7 @@
 
 [sub_resource type="Curve2D" id="Curve2D_etckb"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 272, -1, 0, 0, 0, 0, 273, 54, 0, 0, 0, 0, 273, 63, 0, 0, 0, 0, 272, 159, 0, 0, 0, 0, 278, 159, 0, 0, 0, 0, 278, -1, 0, 0, 0, 0, 272, -1)
+"points": PackedVector2Array(0, 0, 0, 0, 272, 3, 0, 0, 0, 0, 272, 53, 0, 0, 0, 0, 272, 63, 0, 0, 0, 0, 271, 154, 0, 0, 0, 0, 278, 154, 0, 0, 0, 0, 278, 3, 0, 0, 0, 0, 272, 3)
 }
 point_count = 7
 
@@ -27,6 +27,7 @@ enemy = ExtResource("2_7olqr")
 
 [node name="MusicBG" type="AudioStreamPlayer2D" parent="Settings"]
 stream = ExtResource("3_f78kh")
+volume_db = -12.0
 autoplay = true
 
 [node name="Timer" type="Timer" parent="Settings"]
@@ -92,8 +93,8 @@ position = Vector2(1, 1)
 curve = SubResource("Curve2D_etckb")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="PathSpawn"]
-position = Vector2(272, -1)
-rotation = 1.55262
+position = Vector2(272, 3)
+rotation = 1.5708
 
 [node name="Player" parent="." instance=ExtResource("8_xb0su")]
 position = Vector2(62, 81)

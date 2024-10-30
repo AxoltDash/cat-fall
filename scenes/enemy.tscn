@@ -449,6 +449,7 @@ script = ExtResource("1_rdyb4")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
 sprite_frames = SubResource("SpriteFrames_kwbfj")
 animation = &"CatRoll"
+autoplay = "CatRoll"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 7.5)

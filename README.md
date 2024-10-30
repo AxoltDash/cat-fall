@@ -34,7 +34,5 @@ https://youtu.be/60llyQkMces?feature=shared
 
 https://ansimuz.itch.io/gothicvania-patreon-collection
 # To do
-- Cut the sound "Explousion.wav"
-- Play the animations of the CATS
 - Add randomizer from the enemy spawn
 - Add more enemy with the MEDIATOR
