@@ -13,9 +13,9 @@
 
 [sub_resource type="Curve2D" id="Curve2D_etckb"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 272, 0, 0, 0, 0, 0, 272, 160, 0, 0, 0, 0, 278, 160, 0, 0, 0, 0, 278, 0, 0, 0, 0, 0, 272, 0)
+"points": PackedVector2Array(0, 0, 0, 0, 272, -1, 0, 0, 0, 0, 273, 54, 0, 0, 0, 0, 273, 63, 0, 0, 0, 0, 272, 159, 0, 0, 0, 0, 278, 159, 0, 0, 0, 0, 278, -1, 0, 0, 0, 0, 272, -1)
 }
-point_count = 5
+point_count = 7
 
 [node name="Level" type="Node2D" groups=["Level"]]
 script = ExtResource("1_d1y62")
@@ -88,11 +88,12 @@ texture = ExtResource("6_a1suf")
 centered = false
 
 [node name="PathSpawn" type="Path2D" parent="."]
+position = Vector2(1, 1)
 curve = SubResource("Curve2D_etckb")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="PathSpawn"]
-position = Vector2(272, 0)
-rotation = 1.5708
+position = Vector2(272, -1)
+rotation = 1.55262
 
 [node name="Player" parent="." instance=ExtResource("8_xb0su")]
 position = Vector2(62, 81)

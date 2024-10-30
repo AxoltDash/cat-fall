@@ -4,7 +4,6 @@ const SPEED = 60
 
 @onready var explosion : bool = false
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta) -> void:
 	match explosion:
 		false: 
