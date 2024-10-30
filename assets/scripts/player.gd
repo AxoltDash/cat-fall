@@ -13,6 +13,8 @@ func _process(_delta):
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		shoot_ctrl()
+	elif event.is_action_pressed("ui_cancel"):
+		get_tree().quit()
 
 func anim_ctrl() -> void:
 	if GLOBAL.get_axis().y > 0:
@@ -24,7 +26,7 @@ func anim_ctrl() -> void:
 
 func motion_ctrl() -> void:
 	velocity.x = GLOBAL.get_axis().x * SPEED
-	velocity.y = GLOBAL.get_axis().y * SPEED
+	velocity.y = GLOBAL.get_axis().y * -SPEED
 	move_and_slide()
 
 	position.x = clamp(position.x, 0, screensize.x)
@@ -34,6 +36,6 @@ func shoot_ctrl() -> void:
 	$Flash.play("Flash")
 	$Settings/AudioShot.play()
 	
-	var shot_instance = shot.instance()
-	shot_instance.global_position = $ShootSpawn.global_position
+	var shot_instance = shot.instantiate()
+	shot_instance.global_position = $Settings/ShootSpawn.global_position
 	get_tree().call_group("Level", "add_child", shot_instance)

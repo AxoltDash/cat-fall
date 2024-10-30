@@ -1,3 +1,78 @@
-[gd_scene format=3 uid="uid://dvirqf8llyfnf"]
+[gd_scene load_steps=4 format=3 uid="uid://dvirqf8llyfnf"]
+
+[ext_resource type="Script" path="res://assets/scripts/gui.gd" id="1_pant4"]
+[ext_resource type="FontFile" uid="uid://btlct4thqr11n" path="res://assets/fonts/Monocraft-nerd-fonts-patched.ttc" id="2_ltcxt"]
+
+[sub_resource type="Theme" id="Theme_l4flc"]
+default_font = ExtResource("2_ltcxt")
+Label/colors/font_outline_color = Color(0, 0.0156863, 0.0941176, 1)
+Label/constants/outline_size = 40
+Label/font_sizes/font_size = 128
 
 [node name="Gui" type="CanvasLayer"]
+script = ExtResource("1_pant4")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_l4flc")
+
+[node name="Level" type="Label" parent="Control"]
+layout_mode = 2
+offset_left = 200.0
+offset_top = 142.0
+offset_right = 883.0
+offset_bottom = 283.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.1, 0.1)
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "Level: 1"
+horizontal_alignment = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 57.0
+offset_right = 1322.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.1, 0.1)
+
+[node name="Score" type="Label" parent="Control/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "SCORE: 0
+"
+horizontal_alignment = 3
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer2" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 141.0
+offset_right = 881.0
+offset_bottom = 141.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.1, 0.1)
+
+[node name="Credits" type="Label" parent="Control/MarginContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "Credits: 1"

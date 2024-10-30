@@ -484,7 +484,7 @@ animation = &"BigExplosion"
 autoplay = "BigExplosion"
 frame = 9
 
-[node name="Audio" type="AudioStreamPlayer2D" parent="Explosions/BigExplosion"]
+[node name="Audioxd" type="AudioStreamPlayer2D" parent="Explosions/BigExplosion"]
 stream = ExtResource("11_tjc81")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

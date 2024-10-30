@@ -31,8 +31,9 @@ window/stretch/mode="viewport"
 
 [global_group]
 
-Shot=""
 Enemy=""
+Shot=""
+Level=""
 
 [rendering]
 

@@ -1,15 +1,15 @@
 [gd_scene load_steps=12 format=3 uid="uid://c0tsjfqy0elkj"]
 
 [ext_resource type="Script" path="res://assets/scripts/level.gd" id="1_d1y62"]
-[ext_resource type="Script" path="res://assets/scripts/gui.gd" id="2_irxdf"]
+[ext_resource type="PackedScene" uid="uid://bwiahpnowkge" path="res://scenes/enemy.tscn" id="2_7olqr"]
+[ext_resource type="PackedScene" uid="uid://dvirqf8llyfnf" path="res://scenes/gui.tscn" id="2_xpcs4"]
 [ext_resource type="AudioStream" uid="uid://cfsxcn500l4gt" path="res://assets/audio/music/Sirius.ogg" id="3_f78kh"]
 [ext_resource type="Texture2D" uid="uid://cscixe012fl2u" path="res://assets/images/background/layered/bg-back.png" id="4_gixcr"]
 [ext_resource type="Texture2D" uid="uid://mooktsg7uhlm" path="res://assets/images/background/layered/bg-stars.png" id="5_8qv3w"]
 [ext_resource type="Texture2D" uid="uid://dj077and3m4o" path="res://assets/images/background/layered/bg-planet.png" id="6_a1suf"]
 [ext_resource type="Texture2D" uid="uid://bjhxp6aawq7v7" path="res://assets/images/background-blue/prop-planet-big.png" id="7_fq0jk"]
 [ext_resource type="Texture2D" uid="uid://cktjtyhu5gc7q" path="res://assets/images/background-blue/prop-planet-small.png" id="8_lfc6p"]
-[ext_resource type="Script" path="res://assets/scripts/player.gd" id="9_6bkm4"]
-[ext_resource type="PackedScene" uid="uid://c4d56dr6rdage" path="res://scenes/shot.tscn" id="10_o7wk7"]
+[ext_resource type="PackedScene" uid="uid://d32ut5lvk40ki" path="res://scenes/player.tscn" id="8_xb0su"]
 
 [sub_resource type="Curve2D" id="Curve2D_etckb"]
 _data = {
@@ -17,11 +17,11 @@ _data = {
 }
 point_count = 5
 
-[node name="Level" type="Node2D"]
+[node name="Level" type="Node2D" groups=["Level"]]
 script = ExtResource("1_d1y62")
+enemy = ExtResource("2_7olqr")
 
-[node name="GUI" type="CanvasLayer" parent="."]
-script = ExtResource("2_irxdf")
+[node name="Gui" parent="." instance=ExtResource("2_xpcs4")]
 
 [node name="Settings" type="Node" parent="."]
 
@@ -94,10 +94,7 @@ curve = SubResource("Curve2D_etckb")
 position = Vector2(272, 0)
 rotation = 1.5708
 
-[node name="Player" type="CharacterBody2D" parent="."]
-position = Vector2(64, 80)
-motion_mode = 1
-script = ExtResource("9_6bkm4")
-shot = ExtResource("10_o7wk7")
+[node name="Player" parent="." instance=ExtResource("8_xb0su")]
+position = Vector2(62, 81)
 
 [connection signal="timeout" from="Settings/Timer" to="." method="_on_timer_timeout"]

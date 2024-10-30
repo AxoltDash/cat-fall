@@ -19,7 +19,6 @@ func parallax_bg(delta_time) -> void:
 	$Background/Planet_mini.scroll_base_offset -= Vector2(1, 0) * delta_time * 24
 
 func _on_timer_timeout() -> void:
-	var enemy_instance = enemy.instance()
+	var enemy_instance = enemy.instantiate()
 	enemy_instance.global_position = $PathSpawn/PathFollow2D.global_position
 	add_child(enemy_instance)
-
