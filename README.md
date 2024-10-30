@@ -16,13 +16,26 @@ This project is for educational purposes and is not intended for commercial use.
 - Godot Engine 4.3 or later.
 
 ## Copyright
-Music used:
-Tronicles
+### Music used:
+**Tronicles**:
+
 https://www.youtube.com/watch?v=JUegvqJdyQI
 
-Evolution
+**Evolution:**
+
 https://youtu.be/a6v-RL5ypR4?feature=shared
 
-Sirius
+**Sirius:**
+
 https://youtu.be/60llyQkMces?feature=shared
 
+### Sprites
+**ANZIMUS (LEGACY COLLECTION)**:
+
+https://ansimuz.itch.io/gothicvania-patreon-collection
+# To do
+- Cut the sound "Explousion.wav"
+- Delete the spawn animation from the enemy
+- Play the animations of the CATS
+- Add randomizer from the enemy spawn
+- Add more enemy with the MEDIATOR
