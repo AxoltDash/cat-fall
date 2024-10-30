@@ -5,10 +5,10 @@ const SPEED = 60
 @onready var explosion : bool = false
 @onready var mediator = get_node("/root/Mediator")
 
-func _ready():
+func _ready() -> void:
     mediator.register_enemy(self)
 
-func _process(delta) -> void:
+func _process(delta: float) -> void:
     match explosion:
         false: 
             global_position.x -= SPEED * delta
