@@ -34,5 +34,4 @@ https://youtu.be/60llyQkMces?feature=shared
 
 https://ansimuz.itch.io/gothicvania-patreon-collection
 # To do
-- Add randomizer from the enemy spawn
 - Add more enemy with the MEDIATOR
