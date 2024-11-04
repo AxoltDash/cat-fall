@@ -18,3 +18,5 @@ func _on_restart_pressed() -> void:
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
 		get_tree().quit()
+	if event.is_action_pressed("ui_accept"):
+		get_tree().change_scene_to_file("res://scenes/level.tscn")

@@ -1,37 +1,18 @@
-[gd_scene load_steps=77 format=3 uid="uid://btk7mfgktmam"]
+[gd_scene load_steps=56 format=3 uid="uid://btk7mfgktmam"]
 
 [ext_resource type="Script" path="res://assets/scripts/enemyRoll.gd" id="1_v6aod"]
 [ext_resource type="Texture2D" uid="uid://tnw05yhxychg" path="res://assets/images/cats/kittyCrying.png" id="2_aju5o"]
 [ext_resource type="Texture2D" uid="uid://dcurfbii7dasx" path="res://assets/images/cats/CatRolling.png" id="3_cqsjp"]
-[ext_resource type="Texture2D" uid="uid://b6sl26ifs0rjc" path="res://assets/images/explosions/small-explosion-1-g/Sprites/frame1.png" id="4_5k4di"]
-[ext_resource type="Texture2D" uid="uid://c4mmp6fcb5j5a" path="res://assets/images/explosions/small-explosion-1-g/Sprites/frame2.png" id="5_g0gla"]
-[ext_resource type="Texture2D" uid="uid://dp5gfqaj42ml2" path="res://assets/images/explosions/small-explosion-1-g/Sprites/frame3.png" id="6_tt7vj"]
-[ext_resource type="Texture2D" uid="uid://c88207dfiwsyo" path="res://assets/images/explosions/small-explosion-1-g/Sprites/frame4.png" id="7_kx04f"]
-[ext_resource type="Texture2D" uid="uid://c4k6mby31bw0u" path="res://assets/images/explosions/small-explosion-1-g/Sprites/frame5.png" id="8_ud546"]
-[ext_resource type="Texture2D" uid="uid://bfaf4x86mfrma" path="res://assets/images/explosions/small-explosion-1-g/Sprites/frame6.png" id="9_6rhlt"]
-[ext_resource type="Texture2D" uid="uid://do71vnsecas7p" path="res://assets/images/explosions/small-explosion-1-g/Sprites/frame7.png" id="10_r8yc4"]
+[ext_resource type="Texture2D" uid="uid://bdokmcruc6ftb" path="res://assets/images/explosions/Explosion/sprites/explosion-animation1.png" id="4_37smj"]
+[ext_resource type="Texture2D" uid="uid://dckguvbfaybhe" path="res://assets/images/explosions/Explosion/sprites/explosion-animation2.png" id="5_vo2f7"]
+[ext_resource type="Texture2D" uid="uid://ddltfi2cu23wv" path="res://assets/images/explosions/Explosion/sprites/explosion-animation3.png" id="6_dy6n7"]
+[ext_resource type="Texture2D" uid="uid://dw0fma5yprope" path="res://assets/images/explosions/Explosion/sprites/explosion-animation4.png" id="7_mbqcc"]
+[ext_resource type="Texture2D" uid="uid://bwqpd81mrkpdt" path="res://assets/images/explosions/Explosion/sprites/explosion-animation5.png" id="8_2vao1"]
+[ext_resource type="Texture2D" uid="uid://bx2lnlnd0462q" path="res://assets/images/explosions/Explosion/sprites/explosion-animation6.png" id="9_ticnj"]
+[ext_resource type="Texture2D" uid="uid://dd2mom5lrj42a" path="res://assets/images/explosions/Explosion/sprites/explosion-animation7.png" id="10_aoh08"]
+[ext_resource type="Texture2D" uid="uid://hbthk3k64amd" path="res://assets/images/explosions/Explosion/sprites/explosion-animation8.png" id="11_k7vpm"]
 [ext_resource type="AudioStream" uid="uid://biacadurg7w8f" path="res://assets/audio/explosion.wav" id="11_n4s74"]
-[ext_resource type="Texture2D" uid="uid://75tglr3n1jeo" path="res://assets/images/explosions/athomic-explosion-1-d/Sprites/explosion-d1.png" id="12_bkj7h"]
-[ext_resource type="Texture2D" uid="uid://d0wro0a7mj44" path="res://assets/images/explosions/athomic-explosion-1-d/Sprites/explosion-d2.png" id="13_yutmn"]
-[ext_resource type="Texture2D" uid="uid://bfucwvbfybvil" path="res://assets/images/explosions/athomic-explosion-1-d/Sprites/explosion-d3.png" id="14_hjken"]
-[ext_resource type="Texture2D" uid="uid://dew4i1dhq1ykh" path="res://assets/images/explosions/athomic-explosion-1-d/Sprites/explosion-d4.png" id="15_2q73u"]
-[ext_resource type="Texture2D" uid="uid://c0aotw4s4y3ph" path="res://assets/images/explosions/athomic-explosion-1-d/Sprites/explosion-d5.png" id="16_f5fib"]
-[ext_resource type="Texture2D" uid="uid://c4crq0em587wx" path="res://assets/images/explosions/athomic-explosion-1-d/Sprites/explosion-d6.png" id="17_sy2o6"]
-[ext_resource type="Texture2D" uid="uid://trdtux7ejqjp" path="res://assets/images/explosions/athomic-explosion-1-d/Sprites/explosion-d7.png" id="18_0yvqq"]
-[ext_resource type="Texture2D" uid="uid://d1qgc78d4ni7m" path="res://assets/images/explosions/athomic-explosion-1-d/Sprites/explosion-d8.png" id="19_r5xj2"]
-[ext_resource type="Texture2D" uid="uid://ctrqgrtsaqcng" path="res://assets/images/explosions/athomic-explosion-1-d/Sprites/explosion-d9.png" id="20_ye2bc"]
-[ext_resource type="Texture2D" uid="uid://3mqw2rtupy7j" path="res://assets/images/explosions/athomic-explosion-1-d/Sprites/explosion-d10.png" id="21_52iii"]
-[ext_resource type="Texture2D" uid="uid://bwj5su253qp05" path="res://assets/images/explosions/athomic-explosion-1-d/Sprites/explosion-d11.png" id="22_sh6am"]
-[ext_resource type="Texture2D" uid="uid://xemvqkfof4il" path="res://assets/images/explosions/athomic-explosion-1-d/Sprites/explosion-d12.png" id="23_8hc6j"]
-[ext_resource type="Texture2D" uid="uid://bdokmcruc6ftb" path="res://assets/images/explosions/Explosion/sprites/explosion-animation1.png" id="24_ka1ip"]
-[ext_resource type="Texture2D" uid="uid://dckguvbfaybhe" path="res://assets/images/explosions/Explosion/sprites/explosion-animation2.png" id="25_2dv2f"]
-[ext_resource type="Texture2D" uid="uid://ddltfi2cu23wv" path="res://assets/images/explosions/Explosion/sprites/explosion-animation3.png" id="26_s2exj"]
-[ext_resource type="Texture2D" uid="uid://dw0fma5yprope" path="res://assets/images/explosions/Explosion/sprites/explosion-animation4.png" id="27_rv5u4"]
-[ext_resource type="Texture2D" uid="uid://bwqpd81mrkpdt" path="res://assets/images/explosions/Explosion/sprites/explosion-animation5.png" id="28_16btb"]
-[ext_resource type="Texture2D" uid="uid://bx2lnlnd0462q" path="res://assets/images/explosions/Explosion/sprites/explosion-animation6.png" id="29_cacv1"]
-[ext_resource type="Texture2D" uid="uid://dd2mom5lrj42a" path="res://assets/images/explosions/Explosion/sprites/explosion-animation7.png" id="30_dl1m2"]
-[ext_resource type="Texture2D" uid="uid://hbthk3k64amd" path="res://assets/images/explosions/Explosion/sprites/explosion-animation8.png" id="31_oyrj3"]
-[ext_resource type="Texture2D" uid="uid://c5mcl81r54ngf" path="res://assets/images/explosions/Explosion/sprites/explosion-animation9.png" id="32_a1av4"]
+[ext_resource type="Texture2D" uid="uid://c5mcl81r54ngf" path="res://assets/images/explosions/Explosion/sprites/explosion-animation9.png" id="12_ge0oy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8b747"]
 atlas = ExtResource("2_aju5o")
@@ -325,169 +306,75 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uqla7"]
-size = Vector2(23.3333, 20.8333)
+size = Vector2(21.6667, 19.1667)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_775s4"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_vmwpf"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_5k4di")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_g0gla")
+"texture": ExtResource("4_37smj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_tt7vj")
+"texture": ExtResource("5_vo2f7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_kx04f")
+"texture": ExtResource("6_dy6n7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_ud546")
+"texture": ExtResource("7_mbqcc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_6rhlt")
+"texture": ExtResource("8_2vao1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_r8yc4")
-}],
-"loop": false,
-"name": &"Explosion",
-"speed": 16.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_icop2"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("12_bkj7h")
+"texture": ExtResource("9_ticnj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_yutmn")
+"texture": ExtResource("10_aoh08")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_hjken")
+"texture": ExtResource("11_k7vpm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_2q73u")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_f5fib")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_sy2o6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_0yvqq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_r5xj2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_ye2bc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_52iii")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_sh6am")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_8hc6j")
+"texture": ExtResource("12_ge0oy")
 }, {
 "duration": 1.0,
 "texture": null
 }],
 "loop": false,
-"name": &"AtomicExplosion",
-"speed": 16.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_g0fwn"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("24_ka1ip")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_2dv2f")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_s2exj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("27_rv5u4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("28_16btb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("29_cacv1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("30_dl1m2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("31_oyrj3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("32_a1av4")
-}, {
-"duration": 1.0,
-"texture": null
-}],
-"loop": false,
-"name": &"BigExplosion",
+"name": &"ExplosionXD",
 "speed": 16.0
 }]
 
 [node name="EnemyRoll" type="Node2D"]
 script = ExtResource("1_v6aod")
 
-[node name="Area2D" type="Area2D" parent="." groups=["Enemy"]]
+[node name="Area2D" type="Area2D" parent="." groups=["Enemy", "EnemyRoll"]]
 
 [node name="CatSprites" type="AnimatedSprite2D" parent="Area2D"]
-position = Vector2(1, 0)
+position = Vector2(0, -10.5)
 scale = Vector2(1.4, 1.4)
 sprite_frames = SubResource("SpriteFrames_kwbfj")
 animation = &"CatRoll"
 autoplay = "CatRoll"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, 10.5)
 scale = Vector2(1.2, 1.2)
 shape = SubResource("RectangleShape2D_uqla7")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Area2D"]
-position = Vector2(-2, 10.5)
-scale = Vector2(1.6, 1.25)
+position = Vector2(0, -2.38419e-07)
+scale = Vector2(1.35, 1.2)
 
 [node name="Explosion" type="AnimatedSprite2D" parent="."]
-position = Vector2(3, 7)
-sprite_frames = SubResource("SpriteFrames_775s4")
-animation = &"Explosion"
-frame = 6
-frame_progress = 1.0
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_vmwpf")
+animation = &"ExplosionXD"
 
 [node name="Audio" type="AudioStreamPlayer2D" parent="Explosion"]
-stream = ExtResource("11_n4s74")
-
-[node name="Explosions" type="Node2D" parent="."]
-
-[node name="AtomicExplosion" type="AnimatedSprite2D" parent="Explosions"]
-position = Vector2(0, -34)
-sprite_frames = SubResource("SpriteFrames_icop2")
-animation = &"AtomicExplosion"
-autoplay = "AtomicExplosion"
-frame = 12
-
-[node name="BigExplosion" type="AnimatedSprite2D" parent="Explosions"]
-sprite_frames = SubResource("SpriteFrames_g0fwn")
-animation = &"BigExplosion"
-autoplay = "BigExplosion"
-frame = 9
-
-[node name="Audioxd" type="AudioStreamPlayer2D" parent="Explosions/BigExplosion"]
 stream = ExtResource("11_n4s74")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

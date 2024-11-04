@@ -39,9 +39,8 @@ func _on_timer_timeout() -> void:
 		var random_rotation = randf_range(deg_to_rad(-359), deg_to_rad(359))
 		enemy_instance.rotation = random_rotation
 
-		var random_rotation_speed = randf_range(0.5, 2.0)  # Adjust the range as needed
+		var random_rotation_speed = randf_range(0.5, 2.0)
 		enemy_instance.rotation_speed = random_rotation_speed
-
 	else:
 		enemy_instance = enemyRoll.instantiate()
 		enemy_instance.global_position = $PathSpawn/PathFollow2D.global_position
@@ -53,3 +52,7 @@ func _on_timer_timeout() -> void:
 	var new_wait_time = max_wait_time - (elapsed_time / 100.0)
 	timer.wait_time = clamp(new_wait_time, min_wait_time, max_wait_time)
 	timer.start()
+
+func _input(event):
+	if event.is_action_pressed("ui_cancel"):
+		get_tree().quit()

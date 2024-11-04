@@ -17,7 +17,7 @@ func _process(delta) -> void:
 func explosion_ctrl() -> void:
 	explosion = true
 	$Area2D.queue_free()
-	$Explosion.play("Explosion")
+	$Explosion.play("ExplosionXD")
 	$Explosion/Audio.play()
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
