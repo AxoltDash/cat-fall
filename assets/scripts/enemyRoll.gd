@@ -1,20 +1,18 @@
 extends Node2D
 
 const SPEED = 60
-var rotation_speed = 1.0
 
 @onready var explosion : bool = false
 @onready var cat_sprites = $Area2D/CatSprites
 
 func _ready() -> void:
-	cat_sprites.play("CatCry")
-
+	var random_time = randf() * 6
+	cat_sprites.play("CatRoll", random_time)
 
 func _process(delta) -> void:
 	match explosion:
 		false: 
-			global_position.x -= SPEED * 1.5 * delta
-			rotation += rotation_speed * delta
+			global_position.x -= SPEED * 1.3 * delta
 
 func explosion_ctrl() -> void:
 	explosion = true

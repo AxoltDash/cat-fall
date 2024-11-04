@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://c0tsjfqy0elkj"]
+[gd_scene load_steps=13 format=3 uid="uid://c0tsjfqy0elkj"]
 
 [ext_resource type="Script" path="res://assets/scripts/level.gd" id="1_d1y62"]
 [ext_resource type="PackedScene" uid="uid://bwiahpnowkge" path="res://scenes/enemy.tscn" id="2_7olqr"]
 [ext_resource type="PackedScene" uid="uid://dvirqf8llyfnf" path="res://scenes/gui.tscn" id="2_xpcs4"]
 [ext_resource type="AudioStream" uid="uid://cfsxcn500l4gt" path="res://assets/audio/music/Sirius.ogg" id="3_f78kh"]
+[ext_resource type="PackedScene" uid="uid://btk7mfgktmam" path="res://scenes/enemyRoll.tscn" id="3_pcdgj"]
 [ext_resource type="Texture2D" uid="uid://cscixe012fl2u" path="res://assets/images/background/layered/bg-back.png" id="4_gixcr"]
 [ext_resource type="Texture2D" uid="uid://mooktsg7uhlm" path="res://assets/images/background/layered/bg-stars.png" id="5_8qv3w"]
 [ext_resource type="Texture2D" uid="uid://dj077and3m4o" path="res://assets/images/background/layered/bg-planet.png" id="6_a1suf"]
@@ -13,13 +14,14 @@
 
 [sub_resource type="Curve2D" id="Curve2D_etckb"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 272, 3, 0, 0, 0, 0, 272, 53, 0, 0, 0, 0, 272, 63, 0, 0, 0, 0, 271, 154, 0, 0, 0, 0, 278, 154, 0, 0, 0, 0, 278, 3, 0, 0, 0, 0, 272, 3)
+"points": PackedVector2Array(0, 0, 0, 0, 272, -1, 0, 0, 0, 0, 272, 53, 0, 0, 0, 0, 272, 63, 0, 0, 0, 0, 271, 156, 0, 0, 0, 0, 278, 156, 0, 0, 0, 0, 278, -1, 0, 0, 0, 0, 272, -1)
 }
 point_count = 7
 
 [node name="Level" type="Node2D" groups=["Level"]]
 script = ExtResource("1_d1y62")
 enemy = ExtResource("2_7olqr")
+enemyRoll = ExtResource("3_pcdgj")
 
 [node name="Gui" parent="." instance=ExtResource("2_xpcs4")]
 
@@ -31,7 +33,7 @@ volume_db = -12.0
 autoplay = true
 
 [node name="Timer" type="Timer" parent="Settings"]
-wait_time = 0.92
+wait_time = 0.6
 autostart = true
 
 [node name="Background" type="Node" parent="."]
@@ -93,7 +95,7 @@ position = Vector2(1, 1)
 curve = SubResource("Curve2D_etckb")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="PathSpawn"]
-position = Vector2(272, 3)
+position = Vector2(272, -1)
 rotation = 1.5708
 
 [node name="Player" parent="." instance=ExtResource("8_xb0su")]
