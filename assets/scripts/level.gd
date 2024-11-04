@@ -28,6 +28,11 @@ func parallax_bg(delta_time) -> void:
 func _on_timer_timeout() -> void:
 	var enemy_instance = enemy.instantiate()
 	enemy_instance.global_position = $PathSpawn/PathFollow2D.global_position
+
+	# Set random rotation between -45° and 45°
+	var random_rotation = randf_range(deg_to_rad(-15), deg_to_rad(15))
+	enemy_instance.rotation = random_rotation
+    
 	add_child(enemy_instance)
 	# Set new random timeout
 	timer.wait_time = randf_range(0.1, 1.0)
