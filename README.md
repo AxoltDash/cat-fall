@@ -2,7 +2,7 @@
 # Cat Space
 
 <p align="center">
-    <img src="media/CatRollinHD.gif" alt="Cat Rolling" width="300">
+    <img src="media/CatRollingHD.gif" alt="Cat Rolling" width="300">
 </p>
 
 ## Description
