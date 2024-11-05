@@ -7,7 +7,7 @@
 
 ## Description
 
-Fall Cat is a simple yet addictive game where your goal is to prevent the cats from landing on their feet. If one falls, you lose. Test your reflexes and enjoy the fun!
+Cat-Space is an addictive game where your mission is to eliminate as many space cats as possible without dying in the attempt, but be careful, there are cats with very "peculiar" qualities.
 
 ## License
 
@@ -31,9 +31,9 @@ This project is for educational purposes and is not intended for commercial use.
 
 ## How to Play
 
-- Use the arrow keys to move.
-- Prevent the cats from landing on their feet.
-- If a cat lands on its feet, the game is over.
+- Use the arrow keys to move up, down, left or right
+- Press space to shoot
+- DO NOT let a cat touch you, if you do you will lose!
 
 ## Screenshots
 
