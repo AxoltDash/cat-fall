@@ -346,7 +346,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"ExplosionXD",
-"speed": 16.0
+"speed": 32.0
 }]
 
 [node name="EnemyRoll" type="Node2D"]
