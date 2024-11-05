@@ -12,8 +12,8 @@ var max_wait_time = 1.0
 func _ready() -> void:
 	GLOBAL.score = 0
 	GLOBAL.credits = 1
-	timer.timeout.connect(_on_timer_timeout)
-	# Set initial random timeout
+	if not timer.is_connected("timeout", Callable(self, "_on_timer_timeout")):
+		timer.timeout.connect(Callable(self, "_on_timer_timeout"))
 	timer.wait_time = randf_range(0.1, 1.0)
 	timer.start()
 

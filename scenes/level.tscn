@@ -33,7 +33,6 @@ volume_db = -12.0
 autoplay = true
 
 [node name="Timer" type="Timer" parent="Settings"]
-wait_time = 0.004
 autostart = true
 
 [node name="Background" type="Node" parent="."]
