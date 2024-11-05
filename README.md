@@ -50,10 +50,6 @@ This project is for educational purposes and is not intended for commercial use.
 
 - **ANZIMUS (LEGACY COLLECTION)**: [Itch.io Link](https://ansimuz.itch.io/gothicvania-patreon-collection)
 
-## To Do
-
-- Add more enemies with the MEDIATOR pattern.
-
 ---
 
 *This project is powered by the [Godot Engine](https://godotengine.org/).*
