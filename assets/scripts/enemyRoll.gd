@@ -7,13 +7,12 @@ const SPEED = 60
 
 func _ready() -> void:
 	var random_time = randf_range(0.5, 6.0)
-	# var random_time = randf() * 6
 	cat_sprites.play("CatRoll", random_time)
 
 func _process(delta) -> void:
 	match explosion:
 		false: 
-			global_position.x -= SPEED * 1.3 * delta
+			global_position.x -= SPEED * 1.6 * delta
 
 func explosion_ctrl() -> void:
 	explosion = true
