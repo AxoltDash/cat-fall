@@ -6,7 +6,8 @@ const SPEED = 60
 @onready var cat_sprites = $Area2D/CatSprites
 
 func _ready() -> void:
-	var random_time = randf() * 6
+	var random_time = randf_range(0.5, 6.0)
+	# var random_time = randf() * 6
 	cat_sprites.play("CatRoll", random_time)
 
 func _process(delta) -> void:
