@@ -13,7 +13,7 @@ func _ready() -> void:
 func _process(delta) -> void:
 	match explosion:
 		false: 
-			global_position.x -= SPEED * 1.4 * delta
+			global_position.x -= SPEED * 1.7 * delta
 			rotation += rotation_speed * delta
 
 func explosion_ctrl() -> void:

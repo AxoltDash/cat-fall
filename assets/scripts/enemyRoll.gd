@@ -12,7 +12,7 @@ func _ready() -> void:
 func _process(delta) -> void:
 	match explosion:
 		false: 
-			global_position.x -= SPEED * 1.6 * delta
+			global_position.x -= SPEED * 2.1 * delta
 
 func explosion_ctrl() -> void:
 	explosion = true
@@ -32,7 +32,7 @@ func _on_area_2d_body_entered(body) -> void:
 func _on_area_2d_area_entered(area) -> void:
 	if area.is_in_group("Shot"):
 		explosion_ctrl()
-		GLOBAL.score += 100
+		GLOBAL.score += 200
 
 func _on_audio_finished() -> void:
 	queue_free()
