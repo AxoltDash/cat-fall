@@ -1129,5 +1129,16 @@ text = "EXIT"
 [node name="MenuMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_qtp72")
 
+[node name="MarginContainer3" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 322.0
+offset_bottom = 124.0
+scale = Vector2(0.08, 0.08)
+
+[node name="Mute" type="Button" parent="MarginContainer3"]
+layout_mode = 2
+text = "mute"
+
 [connection signal="pressed" from="MarginContainer2/Buttons/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="MarginContainer2/Buttons/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="MarginContainer3/Mute" to="." method="_on_mute_pressed"]
