@@ -25,7 +25,7 @@ This project is for educational purposes and is not intended for commercial use.
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/fall-cat.git
+    git clone https://github.com/AxoltDash/cat-space
     ```
 2. Open the project in Godot Engine.
 
