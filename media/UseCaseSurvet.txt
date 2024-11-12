@@ -1,0 +1,45 @@
+1. Descripción
+Este caso de uso describe el sistema de generación de enemigos en un juego. Se implementa un temporizador (nodo) que, al agotarse, emite una señal para instanciar enemigos en la escena del nivel. El tipo de enemigo a instanciar depende de un valor aleatorio, donde se generan tanto enemigos simples como enemigos grandes. Una vez que el enemigo es instanciado y añadido a la escena, el temporizador se reinicia, estableciendo un nuevo tiempo de espera basado en el tiempo transcurrido.
+
+2. Flujo de Eventos.
+2.1. Flujo de eventos básico.
+2.1.1 Evento en Timeout.
+2.1.1.1 El temporizador (Nodo) emite la señal cuando se agota su tiempo de espera de 1.0 segundo.
+2.1.1.2 Señal será enviada a un metodo que maneje como aparecerá un enemigo.
+
+2.1.2. Llamada al metodo.
+2.1.2.1 El metodo recibe la señal del temporizador.
+2.1.2.2 Generar un numero aleatorio del 0.0 al 1.0.
+2.1.2.3 Si el sistema genera un numero menor a 0.6 [FA1 Instancear enemigo simple].
+2.1.2.4 Si el sistema genera un numero mayor a 0.6 [FA2 Instancear enemigo grande].
+
+2.1.3. Agregar enemigo al nivel.
+2.1.3.1 Mostrar en la escena nivel la instancia del enemigo.
+
+2.1.4. Reiniciar el temporizador.
+2.1.4.1 Calcular un nuevo tiempo para el temporizador basado en el tiempo transcurrido usando "tiempo_máximo - tiempo_transcurrido / 100.0".
+2.1.4.2 Se le aplica a "un nuevo tiempo" un valor no menor al tiempo_mínimo y al tiempo_máximo definidos
+2.1.4.3 El nuevo tiempo de espera calculado se establece al temporizador.
+
+2.2. Flujos Alternativos.
+2.2.1 [FA1 Instancear enemigo simple]
+2.2.1.1 Se instancia el enemigo simple junto a su escena correspondiente.
+2.2.1.2 La posicion global del enemigo instanceado se establece en un nodo que tenga una ruta de arriba a abajo de la pantalla usando una posicion global.
+2.2.1.3 Se le asigna una rotacion aleatoria "base".
+2.2.1.4 Se le establece una velocidad de rotacion aleatoria entre 0.5 y 2.0 para que el enemigo gire a lo largo del nivel.
+
+2.2.1 [FA2 Instancear enemigo grande]
+2.2.1.1 Se instancia el enemigo grande junto a su escena correspondiente.
+2.2.1.2 La posicion global del enemigo instanceado se establece en un nodo que tenga una ruta de arriba a abajo de la pantalla usando una posicion global.
+2.2.1.3 Se le asigna una rotacion aleatoria "base" entre -10.0 y 10.0 grados.
+
+3. Requerimientos especiales
+3.1 Las escenas y scripts de los enemigos deben manejarse como "enemy" y "enemyRoll" para el "enemigo simple" y el "enemigo grande" respectivamente
+
+4. Precondiciones 
+4.1 El temporizador tiene que ser un nodo que debe de estar marcado como "activo" y estar conectado a metodo que maneje a los enemigos
+4.2 Las escenas de los enemigos deben estar cargadas y disponibles dentro del nodo donde se desarrolle este caso de usando
+4.3 Tener valores de tiempo_máximo y tiempo_mínimo para poder modificarse facilmente para futuro desarrollo de manejo de dificultad
+
+5. Postcondiciones
+5.1 Asegurar que el temporizador si sea reiniciado
